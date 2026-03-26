@@ -1,14 +1,216 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile 8</title>
-    <link rel="stylesheet" href="src/output.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Team 8</title>
+  <link rel="stylesheet" href="src/output.css">
 </head>
-<body>
-    <div class="container">
-        <h1 class="text-amber-400 font-bold text-4xl">Profile 8</h1>
+
+<body class="bg-gray-950 text-white font-sans">
+
+  <!-- NAV -->
+  <nav class="border-b border-gray-800">
+    <div class="max-w-5xl mx-auto px-6 h-14 flex items-center justify-between">
+
+      <span class="font-bold text-white">Team VIII</span>
+
+      <!-- Desktop links -->
+      <div class="hidden md:flex items-center gap-6 text-sm text-gray-400">
+        <a href="#" class="hover:text-white transition-colors">Work</a>
+        <a href="#team" class="hover:text-white transition-colors">Team</a>
+        <a href="#" class="hover:text-white transition-colors">Contact</a>
+        <a href="#" class="bg-indigo-600 hover:bg-indigo-500 text-white text-sm px-4 py-1.5 rounded-md transition-colors">
+          Hire Us
+        </a>
+      </div>
+
+      <!-- Hamburger -->
+      <button id="menu-btn" class="md:hidden flex flex-col gap-1.5 p-1">
+        <span id="b1" class="block w-5 h-0.5 bg-gray-400 rounded transition-all duration-300 origin-center"></span>
+        <span id="b2" class="block w-5 h-0.5 bg-gray-400 rounded transition-all duration-300"></span>
+        <span id="b3" class="block w-3 h-0.5 bg-gray-400 rounded transition-all duration-300 origin-center"></span>
+      </button>
     </div>
+
+    <!-- Mobile menu -->
+    <div id="mobile-menu" class="md:hidden overflow-hidden max-h-0 transition-all duration-300">
+      <div class="px-6 py-4 flex flex-col gap-3 text-sm text-gray-400 border-t border-gray-800">
+        <a href="#" class="hover:text-white transition-colors">Work</a>
+        <a href="#team" class="hover:text-white transition-colors">Team</a>
+        <a href="#" class="hover:text-white transition-colors">Contact</a>
+        <a href="#" class="bg-indigo-600 hover:bg-indigo-500 text-white px-4 py-2 rounded-md w-max transition-colors">
+          Hire Us
+        </a>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- HERO -->
+  <section class="max-w-5xl mx-auto px-6 py-20">
+    <p class="text-indigo-400 text-sm font-medium mb-3">Meet the team</p>
+    <h1 class="text-4xl sm:text-5xl font-bold text-white mb-4">We build things<br />people actually use.</h1>
+    <p class="text-gray-400 text-lg max-w-lg">
+      A small team of engineers focused on shipping quality software, fast!.
+    </p>
+  </section>
+
+
+  <!-- TEAM -->
+  <section id="team" class="max-w-5xl mx-auto px-6 pb-24">
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+
+      <!-- Card 1 -->
+      <div class="bg-gray-900 border border-gray-800 rounded-xl p-6 hover:border-gray-600 transition-colors">
+        <a href="">
+          <div class="flex items-center gap-4 mb-4">
+            <div class="w-12 h-12 rounded-full border-2 border-indigo-600 flex items-center justify-center font-bold text-sm shrink-0">
+              <img src="assets/img/photo_5791825371199114882_y.jpg" alt="M.A" class="w-full h-full rounded-full object-cover">
+            </div>
+            <div>
+              <h3 class="font-semibold text-white">Msughter Apera</h3>
+              <p class="text-indigo-400 text-sm">Full-Stack Engineer</p>
+            </div>
+            <span class="ml-auto w-2 h-2 rounded-full bg-green-400"></span>
+          </div>
+          <p class="text-gray-400 text-sm leading-relaxed mb-4">
+            Building applications and architecting systems that scale.
+          </p>
+          <div class="flex flex-wrap gap-2">
+            <span class="text-xs bg-gray-800 text-gray-300 px-2.5 py-1 rounded-md">Python</span>
+            <span class="text-xs bg-gray-800 text-gray-300 px-2.5 py-1 rounded-md">JavaScript</span>
+            <span class="text-xs bg-gray-800 text-gray-300 px-2.5 py-1 rounded-md">FastAPI</span>
+            <span class="text-xs bg-gray-800 text-gray-300 px-2.5 py-1 rounded-md">PostgreSQL</span>
+            <span class="text-xs bg-gray-800 text-gray-300 px-2.5 py-1 rounded-md">...</span>
+          </div>
+        </a>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="bg-gray-900 border border-gray-800 rounded-xl p-6 hover:border-gray-600 transition-colors">
+        <a href="">
+          <div class="flex items-center gap-4 mb-4">
+            <div class="w-12 h-12 rounded-full border-2 border-orange-500 flex items-center justify-center font-bold text-sm shrink-0">
+              <img src="assets/img/wal.jpg" alt="P.W" class="w-full h-full rounded-full object-cover">
+            </div>
+            <div>
+              <h3 class="font-semibold text-white">Patrick Walshak</h3>
+              <p class="text-orange-400 text-sm">Full-Stack Engineer</p>
+            </div>
+            <span class="ml-auto w-2 h-2 rounded-full bg-green-400"></span>
+          </div>
+          <p class="text-gray-400 text-sm leading-relaxed mb-4">
+            Designing products that feel obvious in hindsight. Has strong opinions and a key eye for design.
+          </p>
+          <div class="flex flex-wrap gap-2">
+            <span class="text-xs bg-gray-800 text-gray-300 px-2.5 py-1 rounded-md">JavaScript</span>
+            <span class="text-xs bg-gray-800 text-gray-300 px-2.5 py-1 rounded-md">Python</span>
+            <span class="text-xs bg-gray-800 text-gray-300 px-2.5 py-1 rounded-md">FastAPI</span>
+            <span class="text-xs bg-gray-800 text-gray-300 px-2.5 py-1 rounded-md">TailwindCSS</span>
+            <span class="text-xs bg-gray-800 text-gray-300 px-2.5 py-1 rounded-md">...</span>
+          </div>
+        </a>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="bg-gray-900 border border-gray-800 rounded-xl p-6 hover:border-gray-600 transition-colors">
+        <a href="">
+          <div class="flex items-center gap-4 mb-4">
+            <div class="w-12 h-12 rounded-full border-2 border-cyan-600 flex items-center justify-center font-bold text-sm shrink-0">
+              <img src="assets/img/jo.jpg" alt="J.G" class="w-full h-full rounded-full object-cover">
+            </div>
+            <div>
+              <h3 class="font-semibold text-white">Joe Godwin</h3>
+              <p class="text-cyan-400 text-sm">Full-Stack Engineer</p>
+            </div>
+            <span class="ml-auto w-2 h-2 rounded-full bg-yellow-400"></span>
+          </div>
+          <p class="text-gray-400 text-sm leading-relaxed mb-4">
+            Building robust and scalable web applications with modern technologies.
+          </p>
+          <div class="flex flex-wrap gap-2">
+            <span class="text-xs bg-gray-800 text-gray-300 px-2.5 py-1 rounded-md">Python</span>
+            <span class="text-xs bg-gray-800 text-gray-300 px-2.5 py-1 rounded-md">JavaScript</span>
+            <span class="text-xs bg-gray-800 text-gray-300 px-2.5 py-1 rounded-md">FastAPI</span>
+            <span class="text-xs bg-gray-800 text-gray-300 px-2.5 py-1 rounded-md">MySQL</span>
+            <span class="text-xs bg-gray-800 text-gray-300 px-2.5 py-1 rounded-md">...</span>
+          </div>
+        </a>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="bg-gray-900 border border-gray-800 rounded-xl p-6 hover:border-gray-600 transition-colors">
+        <a href="">
+          <div class="flex items-center gap-4 mb-4">
+            <div class="w-12 h-12 rounded-full border-2 border-emerald-600 flex items-center justify-center font-bold text-sm shrink-0">
+              <img src="assets/img/vee.jpg" alt="V.H" class="w-full h-full rounded-full object-cover">
+            </div>
+            <div>
+              <h3 class="font-semibold text-white">Vincent Husseini</h3>
+              <p class="text-emerald-400 text-sm">Front-end Engineer</p>
+            </div>
+            <span class="ml-auto w-2 h-2 rounded-full bg-green-400"></span>
+          </div>
+          <p class="text-gray-400 text-sm leading-relaxed mb-4">
+            Implementing responsive and user-friendly designs that stay consistent across all platforms.
+          </p>
+          <div class="flex flex-wrap gap-2">
+            <span class="text-xs bg-gray-800 text-gray-300 px-2.5 py-1 rounded-md">TypeScript</span>
+            <span class="text-xs bg-gray-800 text-gray-300 px-2.5 py-1 rounded-md">JavaScript</span>
+            <span class="text-xs bg-gray-800 text-gray-300 px-2.5 py-1 rounded-md">TailwindCSS</span>
+            <span class="text-xs bg-gray-800 text-gray-300 px-2.5 py-1 rounded-md">HTML/CSS</span>
+            <span class="text-xs bg-gray-800 text-gray-300 px-2.5 py-1 rounded-md">...</span>
+          </div>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer class="border-t border-gray-800 px-6 py-6">
+    <div class="max-w-5xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-3 text-sm text-gray-500">
+      <span class="font-semibold text-gray-400">Team VIII</span>
+      <span>© 2026 Team VIII. All rights reserved.</span>
+      <div class="flex gap-4">
+        <a href="#" class="hover:text-white transition-colors">Privacy</a>
+        <a href="#" class="hover:text-white transition-colors">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- JS: hamburger only -->
+  <script>
+    const btn  = document.getElementById('menu-btn');
+    const menu = document.getElementById('mobile-menu');
+    const b1   = document.getElementById('b1');
+    const b2   = document.getElementById('b2');
+    const b3   = document.getElementById('b3');
+    let open   = false;
+
+    btn.addEventListener('click', () => {
+      open = !open;
+      if (open) {
+        b1.style.transform = 'translateY(6px) rotate(45deg)';
+        b2.style.opacity   = '0';
+        b3.style.transform = 'translateY(-6px) rotate(-45deg)';
+        b3.style.width     = '20px';
+        menu.style.maxHeight = menu.scrollHeight + 'px';
+      } else {
+        b1.style.transform = '';
+        b2.style.opacity   = '1';
+        b3.style.transform = '';
+        b3.style.width     = '12px';
+        menu.style.maxHeight = '0';
+      }
+    });
+
+    menu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => open && btn.click()));
+  </script>
+
 </body>
 </html>
